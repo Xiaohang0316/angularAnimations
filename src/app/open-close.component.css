@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+
+.open-close-container1 {
+  border: 1px solid #dddddd;
+  width: 0;
+  height: 5px;
+  /* margin-top: 1em; */
+  /* padding: 20px 20px 0px 20px; */
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: aqua;
+  /* display: inline-block; */
+}
+.open-close-container {
+  display: inline-block;
+  border: 1px solid #dddddd;
+  width: 0;
+  height: 5px;
+  margin-top: 1em;
+  /* padding: 20px 20px 0px 20px; */
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: aqua;
+}
