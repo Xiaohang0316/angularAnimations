@@ -32,7 +32,7 @@ import { HEROES } from './mock-heroes';
             animate('4s 3s ease-in-out' , style({ opacity: 1, backgroundColor: "blue",  }))
           ]),
           query('.hero', [
-            // style({ transform: 'translateX(-100%)'}),
+            style({ transform: 'translateX(-100%)'}),
             animate('.7s 500ms ease-in', style({ transform: 'scale(1)' }))
           ]),
         ]),
