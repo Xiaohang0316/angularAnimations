@@ -25,19 +25,24 @@ import { trigger, transition, state, animate, style } from '@angular/animations'
         marginTop: '150px'
       })),
       state('duan', style({
-        width: '0',
-        opacity: 0.8,
-        // backgroundColor: 'blue'
+        opacity:'0'
+      })),
+      state('duan03', style({
+        opacity:'0.3'
+      })),
+      state('duan1', style({
+        opacity:'1'
       })),
       transition('* => *', [
-        animate('1s')
-      ]),
+        animate('0.3s')
+      ] ),
     ]),
   ],
 })
 export class OpenCloseChildComponent {
   isDisabled = false;
   isOpen = false;
+  duangduang = {};
   heightNumber =  200;
   toggleAnimations() {
     this.isDisabled = !this.isDisabled;
@@ -45,5 +50,13 @@ export class OpenCloseChildComponent {
 
   toggle() {
     this.isOpen = !this.isOpen;
+    this.duangduang = {value: 'duan'}
+    setTimeout(() => {
+      this.duangduang = {value: 'duan03'}
+      // this.opacity03()
+      // setTimeout(() => {
+      //   this.duangduang = {value: 'duan1'}
+      // }, 200);
+    },300)
   }
 }

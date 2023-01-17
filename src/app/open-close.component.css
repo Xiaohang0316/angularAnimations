@@ -5,7 +5,8 @@
 
 .open-close-container1 {
   border: 1px solid #dddddd;
-  width: 0;
+  width: 200px;
+  
   height: 5px;
   /* margin-top: 1em; */
   /* padding: 20px 20px 0px 20px; */

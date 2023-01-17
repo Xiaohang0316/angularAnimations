@@ -1,0 +1,12 @@
+<nav>
+  <button class="toggle" (click)="show = !show">Toggle View</button>
+</nav>
+<section  [@query]="show" (@query.start)="toggleDisabled = true" (@query.done)="toggleDisabled = false">
+  <p>I am a simple child element</p>
+  <p class="qwe">I am a child element that enters and leaves with its parent</p>
+  <p @animateMe>I am a child element with an animation trigger</p>
+  <div class="hero">
+    <span class="badge">{{ hero.id }}</span>
+    <span class="name">{{ hero.name }} <small>(heroes are always animated!)</small></span>
+  </div> 
+</section>
